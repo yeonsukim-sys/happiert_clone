@@ -7,11 +7,11 @@
 body {
     height: 5000px;
 }
+
 /* 헤더 전체 스타일 */
 header {
     width: 100%;
     background-color: #fff;
-    /* position: relative; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -68,7 +68,12 @@ header {
 
 .icon>i {
     color: #c51b1b;
-    
+
+}
+
+#header.hide{
+    transform: translateY(100%);
+    opacity: 0;
 }
 
 /* 헤더 여기까지지 */
@@ -91,11 +96,43 @@ header {
     color: #fff;
 }
 
-.text_area > h1 {
+.text_area>h1 {
     font-size: 45px;
     font-weight: bold;
 }
 
 .bottom_text {
     font-size: 20px;
+}
+
+/* 메인 끝 */
+
+/* 섹션1 시작 */
+
+
+.img_product>a>img {
+    position: relative;
+    margin: 32px;
+    width: 500px;
+    height: 600px;
+    z-index: -2;
+    
+}
+
+.img_product > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    text-decoration: none;
+    color: #c51b1b;
+    font-weight: bold;
+}
+
+.text_box > a {
+    display: flex;
+    font-size: 17px;
+    text-decoration: none;
+    color: #c51b1b;
+    font-weight: bold;
 }

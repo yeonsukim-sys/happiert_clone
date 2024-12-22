@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000px;
+}
+/* 헤더 전체 스타일 */
+header {
+    width: 100%;
+    background-color: #fff;
+    /* position: relative; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+.red_header {
+    background-color: rgb(202, 27, 27);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.none_style h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #c51b1b;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu_bar {
+    display: flex;
+    list-style-type: none;
+}
+
+
+.menu_bar li {
+    margin-left: 14px;
+    font-size: 25px;
+    color: #c51b1b;
+    cursor: pointer;
+    margin: 16px;
+}
+
+.menu_bar>li>a {
+    text-decoration: none;
+    color: #c51b1b;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon>i {
+    color: #c51b1b;
+    
+}
+
+/* 헤더 여기까지지 */
+
+/* 메인 시작 */
+.img_background {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.text_area {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    padding: 0 5rem;
+    flex-direction: column;
+    color: #fff;
+}
+
+.text_area > h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.bottom_text {
+    font-size: 20px;
+}

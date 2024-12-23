@@ -1,138 +1,57 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
 }
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: 'NanumSquareNeoVariable';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf) format("truetype");
+}
+
+
+
 
 body {
-    height: 5000px;
+    font-family: 'NanumSquareNeoVariable';
 }
 
-/* 헤더 전체 스타일 */
 header {
-    width: 100%;
-    background-color: #fff;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     transition: 0.5s;
 }
 
+.sign_up_popup {
+    background-color: #be201f;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
 
-.red_header {
-    background-color: rgb(202, 27, 27);
+}
+
+.sign_up_popup > a {
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 18px;
-}
-
-
-.none_style h1 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 36px;
-    font-weight: bold;
-    color: #c51b1b;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.menu_bar {
-    display: flex;
-    list-style-type: none;
-}
-
-
-.menu_bar li {
-    margin-left: 14px;
-    font-size: 25px;
-    color: #c51b1b;
-    cursor: pointer;
-    margin: 16px;
-}
-
-.menu_bar>li>a {
     text-decoration: none;
-    color: #c51b1b;
 }
 
-.icon {
+.header {
     display: flex;
-}
-
-.icon>i {
-    color: #c51b1b;
-
-}
-
-#header.hide{
-    transform: translateY(100%);
-    opacity: 0;
-}
-
-/* 헤더 여기까지지 */
-
-/* 메인 시작 */
-.img_background {
-    position: relative;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.text_area {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    padding: 0 5rem;
-    flex-direction: column;
-    color: #fff;
-}
-
-.text_area>h1 {
-    font-size: 45px;
-    font-weight: bold;
-}
-
-.bottom_text {
-    font-size: 20px;
-}
-
-/* 메인 끝 */
-
-/* 섹션1 시작 */
-
-
-.img_product>a>img {
-    position: relative;
-    margin: 32px;
-    width: 500px;
-    height: 600px;
-    z-index: -2;
     
-}
-
-.img_product > a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 17px;
-    text-decoration: none;
-    color: #c51b1b;
-    font-weight: bold;
-}
-
-.text_box > a {
-    display: flex;
-    font-size: 17px;
-    text-decoration: none;
-    color: #c51b1b;
-    font-weight: bold;
 }

@@ -326,6 +326,24 @@ header {
     gap: 34px;
 }
 
+.identity_content > button {
+    width: fit-content;
+    background : none;
+    border: 1px solid #be201f;
+    padding: 14px 0;
+    border-radius: 50px;
+}
+
+.identity_content > button > a {
+    color: #be201f;
+    text-decoration: none;
+    padding: 16px 34px;
+    font-size: 20px;
+    border-radius: 50px;
+    /* display: block;
+    justify-content: center; */
+}
+
 .identity_content > h2 {
     font-size: 60px;
     font-weight: 600;

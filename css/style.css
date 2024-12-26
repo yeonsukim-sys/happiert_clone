@@ -57,6 +57,11 @@ header {
     z-index: 1;
 }
 
+header.hide {
+    transform: translateY(50%);
+    opacity: 0;
+}
+
 .sign_up_popup {
     background-color: #be201f;
     text-align: center;
@@ -101,7 +106,7 @@ header {
     /*컨텐츠 요소가 비어있음*/
     background: #be201f;
     margin-top: 10px;
-    /* transition: 0.5s; */
+    transition: 0.5s;
 
 }
 
@@ -329,13 +334,13 @@ header {
 .identity_content > button {
     width: fit-content;
     background : none;
-    border: 1px solid #be201f;
+    border: 1px solid #fff;
     padding: 14px 0;
     border-radius: 50px;
 }
 
 .identity_content > button > a {
-    color: #be201f;
+    color: #fff;
     text-decoration: none;
     padding: 16px 34px;
     font-size: 20px;
@@ -356,3 +361,63 @@ header {
 
 
 /* identity_container  > identity_content 끝 */
+
+/* footer 시작 */
+footer {
+    background: #be201f;
+    padding: 100px 80px;
+    font-size: 20px;
+    color: #fff;
+}
+
+footer > figure {
+    margin-bottom: 60px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_title {
+    margin-bottom: 24px;
+    font-size: 30px;
+    font-weight: 600;
+} 
+
+.info_texts > p {
+    margin-bottom: 10px;
+}
+
+.info_texts > p:last-child {
+    margin-bottom: 50px;
+}
+
+.guide {
+    width: 250px;
+}
+
+.guide > ul > li {
+    padding: 16px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.guide > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.plus_friend {
+    margin-bottom: 32px;
+}
+
+.plus_friend > p:first-child {
+    font-size: 30px;
+}
+
+.contact > div > p {
+    margin-bottom: 16px;
+}
+
+/* footer 끝 */

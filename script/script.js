@@ -1,20 +1,20 @@
-const header = document.querySelector("#header");
+const header = document.querySelector("header");
 
-let posY = 0; 
+let scrollHeight = 0; //스크롤 위치값 넣을 변수
 
-window.addEventListener("scroll",(e) => {
-    if(posY < window.scrollY){
-        headerHide()
-    }else{
-        headerShow()
+window.addEventListener("scroll", () => {
+    if(scrollHeight < window,scrollY){
+        hide()// 숨기는 함수실행
+    }else {
+       show() // 헤더 보여짐
     }
-    posY = window.scrollY;
+    scrollHeight - window.scrollY
 });
 
-function headerHide(){
+function hide(){
     header.classList.add("hide");
 }
 
-function headerShow(){
+function show(){
     header.classList.remove("hide");
 }
